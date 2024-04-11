@@ -16,6 +16,7 @@ const Main = () => {
         className="absolute z-[-10] top-0 bg-center w-full"
         alt="картинка"
       /> */}
+     
     </>
   )
 }
