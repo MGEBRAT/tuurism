@@ -1,16 +1,21 @@
+"use client";
 import About from "@/components/About/About";
 import Country from "@/components/Country/Country";
 import Main from "@/components/Main/Main";
+import useSingleTours from "@/Hooks/useSingleTours";
 import Phone from "@/components/Phone/Phone";
 import Tours from "@/components/Tours/Tours";
-import Image from "next/image";
+
 
 export default function Home() {
+
+  
+
   return (
    <>
-    <Main />
+    <Main  />
     <About />
-    <Tours />
+    <Tours  />
     <Country />
     <Phone />
    </>

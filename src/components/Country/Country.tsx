@@ -34,7 +34,7 @@ const Country = () => {
                                 <Link href="\" className="text-[27px] font-semibold flex"><span className='transition-all duration-300  hover:pr-9 '>Show tours</span><span className=' text-4xl' >→</span></Link>
                             </div>
                         </div>
-                        <Image width={1420} height={300} className='absolute z-[-10]' src={process.env.NEXT_PUBLIC_STRAPI_API_URL + (item.attributes?.img?.data.attributes?.url ?? '')} alt='фото'/>
+                        <Image width={1420} height={300} className='absolute z-[-10] rounded-[20px] bg-cover' src={process.env.NEXT_PUBLIC_STRAPI_API_URL + (item.attributes?.img?.data.attributes?.url ?? '')} alt='фото'/>
                     </li>
                        )
                     })}

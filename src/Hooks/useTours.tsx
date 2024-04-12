@@ -12,6 +12,7 @@ const useTours = () => {
 
   const getTours = () => {
     GlobalApi.getTours().then(resp => {
+        console.log(resp.data.data)
         setToursList(resp.data.data)
     });
   }

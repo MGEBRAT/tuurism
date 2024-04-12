@@ -4,20 +4,20 @@ import React, { useEffect, useState } from 'react'
 
 const useFooters = () => {
 
-    const [footerList, setCountriesList] = useState([]);
+    const [footerList, setFootersList] = useState([]);
 
     useEffect(() => {
-        getCountries();
+        getFooters();
     },[])
 
-  const getCountries = () => {
-    GlobalApi.getCountries().then(resp => {
-        setCountriesList(resp.data.data)
+  const getFooters = () => {
+    GlobalApi.getFooters().then(resp => {
+        setFootersList(resp.data.data)
     });
   }
 
-  return countriesList;
+  return footerList;
 
 }
 
-export default useCountries;
+export default useFooters;

@@ -5,7 +5,7 @@ import ButtonTour from '../ButtonTour/ButtonTour';
 import Link from 'next/link';
 import useTours from '@/Hooks/useTours';
 
-const Tours = () => {
+const Tours = ({}) => {
 
     const tours = useTours();
 
@@ -40,7 +40,7 @@ const Tours = () => {
                     <div className="w-full py-[20px] px-[25px] text-white">
                         <h4 className="text-5xl uppercase font-semibold ">{`${item.attributes?.Name}`}</h4>
                         <p className="text-[27px]">{`${item.attributes?.smallDescr}`}</p>
-                        <ButtonTour href='' containerStyle='flex justify-between w-full h-[50px] py-[10px] px-[15px] text-[22px] mt-4  ' text='Learn more' icon='→'/>
+                        <Link href={'/tours/' + item.attributes?.slug} className=' bg-white text-black font-medium  items-center text-center  rounded-full flex justify-between w-full h-[50px] py-[10px] px-[15px] text-[22px] mt-4'><span>Learn more</span><span  className='text-[35px] h-[55px] ' >→</span></Link>
                     </div>
                     <Image className='bg-no-repeat  bg-cover absolute z-[-10] ' height={659} width={467}   src={process.env.NEXT_PUBLIC_STRAPI_API_URL + (item.attributes?.img?.data.attributes?.url ?? '')} alt='тур'/>
                 </li>

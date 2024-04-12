@@ -4,8 +4,9 @@ import ButtonIcon from "../ButtonIcon/ButtonIcon";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import useMains from "@/Hooks/useMains";
+import Link from "next/link";
 
-const MainSlider = ({}) => {
+const MainSlider = () => {
 
   const mains = useMains();
 
@@ -54,14 +55,10 @@ const MainSlider = ({}) => {
               </ul>
             </div>
             <p className=" w-[950px] font-normal text-[27px] mt-5">
-              {`${item.attributes?.description}`}
+            {`${item.attributes?.description.length > 189 ? item.attributes?.description.slice(0, 189) + '...' : item.attributes?.description }`}
             </p>
-            <ButtonIcon
-              href="/"
-              containerStyle="transition-all duration-300 hover:gap-5 text-[30px] w-[230px]  h-[65px] rounded-full font-medium text-[30px] mt-5 flex justify-center items-center gap-2  "
-              text="Go over"
-              icon=" →"
-            />
+            <Link href="" className="overflow-hidden bg-white text-black transition-all duration-300 hover:gap-5  w-[230px]  h-[65px] rounded-full font-medium text-[30px] mt-5 flex justify-center items-center gap-2  "><span>Go over</span><span className=' text-4xl' >→</span></Link>
+            
           </div>
           {/* <div className="flex flex-col justify-center items-center gap-4 ">
             <span className="rounded-full border-2 border-white w-[17px] h-[17px] absolute mb-[78px] cursor-pointer "></span>

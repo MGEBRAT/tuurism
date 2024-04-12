@@ -10,13 +10,19 @@ const axiosClient = axios.create({
 });
 
 const getMains = () => axiosClient.get('/mains?populate=*');
+
 const getAbouts = () => axiosClient.get('/about?populate=*');
+
 const getTours = () => axiosClient.get('/tours?pagination[pageSize]=6&sort[]=id:desc&populate=*');
-const getCountries = () => axiosClient.get('/countries?populate=*');
+const getSingleTours = (id) => axiosClient.get('/tours?filters[slug][$eqi]=' + id + '&populate=*');
+
+const getCountries = () => axiosClient.get('/countries?pagination[pageSize]=3&sort[]=id:asc&populate=*');
+
 const getFooters = () => axiosClient.get('/footer?populate=*');
 
 export default {
     getMains,
+    getSingleTours,
     getAbouts,
     getTours,
     getCountries,
