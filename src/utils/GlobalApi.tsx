@@ -18,7 +18,7 @@ const getSingleTours = (id) => axiosClient.get('/tours?filters[slug][$eqi]=' + i
 
 const getCountries = () => axiosClient.get('/countries?pagination[pageSize]=3&sort[]=id:asc&populate=*');
 
-const getFooters = () => axiosClient.get('/footer?populate=*');
+const getFooters = () => axiosClient.get('/footeer?populate=*');
 
 export default {
     getMains,

@@ -22,9 +22,9 @@ const Footer = () => {
                   <Link href='/' className='text-2xl font-medium' > {footer.attributes?.number}  </Link>
               </div>
               <div className="flex justify-center items-center gap-5">
-                  <Link href='{footer.attributes?.link1} ' className='' ><Image className='' width={40} height={40} src={process.env.NEXT_PUBLIC_STRAPI_API_URL + (footer.attributes?.icon?.data.attributes?.url ?? '')} alt='icon link'/></Link>
-                  <Link href='{footer.attributes?.link2} ' className='' ><Image width={40} height={40} src={process.env.NEXT_PUBLIC_STRAPI_API_URL + (footer.attributes?.icon2?.data.attributes?.url ?? '')} alt='icon link'/></Link>
-                  <Link href='{footer.attributes?.link3} ' className='' ><Image width={40} height={40} src={process.env.NEXT_PUBLIC_STRAPI_API_URL + (footer.attributes?.icon3?.data.attributes?.url ?? '')}  alt='icon link'/></Link>
+                  <Link href="{footer.attributes?.icon11}" className='' ><Image className='' width={40} height={40} src={process.env.NEXT_PUBLIC_STRAPI_API_URL + (footer.attributes?.icon1?.data.attributes?.url ?? '')} alt='icon link'/></Link>
+                  <Link href="{footer.attributes?.icon22}" className='' ><Image width={40} height={40} src={process.env.NEXT_PUBLIC_STRAPI_API_URL + (footer.attributes?.icon2?.data.attributes?.url ?? '')} alt='icon link'/></Link>
+                  <Link href="{footer.attributes?.icon33}" className='' ><Image width={40} height={40} src={process.env.NEXT_PUBLIC_STRAPI_API_URL + (footer.attributes?.icon3?.data.attributes?.url ?? '')}  alt='icon link'/></Link>
               </div>
 
           </div>
