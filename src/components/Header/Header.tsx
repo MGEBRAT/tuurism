@@ -15,7 +15,7 @@ const Header = () => {
     
     
     <header className='w-full h-[70px] flex justify-center items-center mt-[50px] fixed z-[100]'>
-        <div className=' flex justify-between w-[1440px] bg-headerBackground rounded-full h-[80px] p-[40px] backdrop-blur'> 
+        <div className=' flex justify-between w-[1440px]  rounded-full h-[80px] p-[40px] backdrop-blur'> 
             <div className='flex justify-center items-center'>
                 <Link href="/"  className='flex justify-center items-center'>
                     <Image src='/assets/img/Header/logo.svg' alt='лого' width={40} height={40} className='' />

@@ -68,24 +68,24 @@ export default function page({ params }) {
               </div>
             </div>
            
-            .inverted-bar::before, .inverted-bar::after {
-  /
+            {/* .inverted-bar::before, .inverted-bar::after {
+  
   content: "Текст здесь";
   position: absolute;
   top: 0;
   left: 0;
 }
 .inverted-bar::before {
-  /* Светлый оттенок текста */
-  mix-blend-mode: screen; /* для светлых фонов */
+
+  mix-blend-mode: screen; 
 }
 .inverted-bar::after {
-  /* Темный оттенок текста */
-  mix-blend-mode: difference; /* для темных фонов */
+  
+  mix-blend-mode: difference; 
 } 
         </div>
 
-{/*         
+{        */}
        
         {detailTours?.attributes?.name ? 
           <h2 className="text-left text-white text-5xl uppercase mt-10">{detailTours?.attributes?.name}</h2>

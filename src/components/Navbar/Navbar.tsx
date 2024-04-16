@@ -21,7 +21,7 @@ const Navbar = ({containerStyle} : {containerStyle: string}) => {
         return (
           <>
             <li key={index}>
-              <Link href={item.url} className=''>{item.label}</Link>
+              <Link href={item.url} className='mix-blend-multiply'>{item.label}</Link>
             </li>
           </>
         )

@@ -20,11 +20,14 @@ const getCountries = () => axiosClient.get('/countries?pagination[pageSize]=3&so
 
 const getFooters = () => axiosClient.get('/footeer?populate=*');
 
+const createOrder = (data) => axiosClient.post('/alerts', data)
+
 export default {
     getMains,
     getSingleTours,
     getAbouts,
     getTours,
     getCountries,
-    getFooters
+    getFooters,
+    createOrder
 }

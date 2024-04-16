@@ -5,6 +5,7 @@ import Main from "@/components/Main/Main";
 import useSingleTours from "@/Hooks/useSingleTours";
 import Phone from "@/components/Phone/Phone";
 import Tours from "@/components/Tours/Tours";
+import Alert from "@/components/Alert/Alert";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
     <Tours  />
     <Country />
     <Phone />
+    <Alert />
    </>
   );
 }

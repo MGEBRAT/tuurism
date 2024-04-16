@@ -27,11 +27,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body className={`${roboto.variable} ${oswald.variable} w-full bg-white text-white`}>
         <div className="__next">
           <Header />
-          <main className="main w-full" id="main">
+          <main className="main w-full" id="main ">
             <div className="w-full" id="mainPage">
               {children}
             </div>
